@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jmuyiの小巢-我</title>
+    <link rel="shortcut icon" href="image/title.ico">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+            background: #252424;
+        }
+        section#section-b{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section#section-b .wave{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #4973ff;
+        }
+        section#section-b .wave span{
+            position: absolute;
+            width: 325vh;
+            height: 325vh;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-85%);
+            background: #000000 ;
+        }
+        section#section-b .wave span:nth-child(2){
+            animation: animate 10s linear infinite;
+            border-radius: 40%;
+            background: rgba(20,20,20,0.5);
+        }
+        section#section-b .wave span:nth-child(3){
+            animation: animate 15s linear infinite;
+            border-radius: 42.5%;
+            background: rgba(0,0,0,1);
+        }
+        @keyframes animate{
+            0%{transform: translate(-50%,-75%) rotate(0deg)}
+            100%{transform: translate(-50%,-75%) rotate(360deg)}
+        }
+        section#section-b .content{
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        div#div-bl{
+            position: relative;
+            width: 100vh;
+            height: 50vh;
+            top: -5vh;
+            background-color: #5d7be0a4;
+            color: aliceblue;
+            border-radius: 18px;
+            animation: div-bl 2s;
+        }
+        @keyframes div-bl{
+            0%{width: 30vh;height: 20vh;top: 0vh;left: 0vh;opacity: 0;}
+            100%{width: 100vh;height: 50vh;top: -5vh;opacity: 1;}
+        }
+        div#div-left{
+            position: relative;
+            left: 10px;
+            width: 25vh;
+            top: 1vh;
+            height: 40vh;
+            border-radius: 18px;
+            border-style: dashed;
+        }
+
+        .g-container {
+            width: 50vh;
+            height: 10px;
+            border-radius: 25px;
+            background: hsla(135, 4%, 40%, 0.596);
+         }
+        div#g-progress-py {
+            width: 70%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: rgb(41, 238, 41);
+            position: relative;
+            animation: progress-py 3.5s;
+        }
+        @keyframes progress-py{
+            0%{width: 0%;}
+            100%{width: 70%;}
+        }
+        div#g-progress-hc {
+            width: 40%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: rgb(238, 130, 41);
+            animation: progress-hc 3.5s;
+        }
+        @keyframes progress-hc{
+            0%{width: 0%;}
+            100%{width: 40%;}
+        }
+        div#g-progress-js {
+            width: 20%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: rgb(238, 235, 41);
+            animation: progress-js 3.5s;
+        }
+        @keyframes progress-js{
+            0%{width: 0%;}
+            100%{width: 20%;}
+        }
+        div#g-progress-cc {
+            width: 10%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: rgb(29, 166, 245);
+            animation: progress-cc 3.5s;
+        }
+        @keyframes progress-cc{
+            0%{width: 0%;}
+            100%{width: 10%;}
+        }
+        div#g-progress-java {
+            width: 1%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: rgb(238, 80, 41);
+            animation: progress-java 3.5s;
+        }
+        @keyframes progress-java{
+            0%{width: 0%;}
+            100%{width: 1%;}
+        }
+        div#div-mr{
+            position: relative;
+            border-style:dashed ;
+            top: 5vh;
+            width: 50vh;
+            height: 40vh;
+            left: 10vh;
+            animation: div-mr 2s;
+        }
+        @keyframes div-mr{
+            0%{width: 0vh;height: 0vh;left: 10vh;top: 0vh;}
+            100%{width: 50vh;height: 40vh;left: 10vh;top: 5vh;}
+        }
+    </style>
+</head>
+<body>
+    <section id="section-b" >
+        <div class="wave" style="float: left;" > 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+    <div id="div-bl">
+        <div id="div-left" style="float: left;" >
+            <div>
+            <h2>  基础信息:</h2>
+            <p>  名称:jmuyi</p>
+            <p>  性别:男</p>
+            <p>  QQ号:3179316769</p>
+            <p>  微信号:jinmuyi20091014</p>
+            <p>  邮箱:jinmuiy1@163.com</p>
+            <a href="head.html"><img src="image/avatar.jpg" alt="avatar" style="width: 20vh;height: 20vh;border-radius: 100%;"></a>
+        </div>
+        </div>
+
+        <div id="div-mr" style='float: left;'>
+            <h2 style="text-align: center;" >我的才艺：</h2>            
+            <div id="div-py" >
+                <b>Python:</b>
+                <div class="g-container"><div id="g-progress-py" ></div></div>
+            </div>
+            <div id="HTML/CSS" >
+                <b>HTML/CSS:</b>
+                <div class="g-container"><div id="g-progress-hc" ></div></div>
+            </div>
+            <div id="JavaScript:">
+                <b>JavaScript:</b>
+                <div class="g-container"><div id="g-progress-js" ></div></div>
+            </div>
+            <div id="C/C++" >
+                <b>C/C++:</b>
+                <div class="g-container"><div id="g-progress-cc" ></div></div>
+            </div>
+            <div id="Java" >
+                <b>Java:</b>
+                <div class="g-container"><div id="g-progress-java" ></div></div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

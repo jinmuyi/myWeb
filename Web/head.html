@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jmuyiの小巢</title>
+    <link rel="shortcut icon" href="image/title.ico">
+    <style>
+      *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        min-height: 100vh;
+        background-color: #0c192c;
+    }
+    .container
+    {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .bubbless
+    {
+        position: relative;
+        display: flex;
+    }
+    .bubbless samp
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: #4fc3dc;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px  #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+        animation: animate 999s linear infinite;
+        animation-duration: calc(15s / var(--i));
+    }
+    .bubbless samp:nth-child(even)
+    {
+        background: #ff2f75;
+        box-shadow: 0 0 0 10px  #ff2f7544,
+        0 0 50px #ff2f75,
+        0 0 100px #ff2f75;
+    }
+    @keyframes animate
+    {
+        0%
+     {
+         transform: translateY(100vh) scale(0) ;
+     }
+     100%
+       {
+            transform: translateY(-10vh) scale(1) ;
+        }
+    }
+    </style>
+    <style>
+        
+        img#avatarimg{
+            width: 125px;
+            height: 125px;
+            border-radius: 180px;
+            left: 250px;
+
+            position: relative;
+            
+        
+        }
+        h4#headh4{
+            color: chartreuse;
+            left: 275px;
+            top: 170px;
+            opacity: 1;
+            animation: headh4 2s;
+            position: relative;
+        }
+        @keyframes headh4{
+            0%{opacity: 0;left: 0px;top: 0px;}
+            50%{opacity: 0.5;left: 275px;top: 10px;}
+        }
+        div#avatardiv{
+            width: 700px;
+            height: 220px;
+            left: 350px;
+            top: 20px;
+            animation: avatardiv 1s ;
+            position: relative;
+        }
+        @keyframes avatardiv {
+            0%{left: 0px;top: 0px;}
+            100%{left: 350px;top: 20px;}
+            
+        }
+        div#rightdiv{
+            width: 300px;
+            height: 900px;
+            top: 0px;
+            left: 20px;
+            background-color: rgba(30, 238, 123, 0.575);
+            animation: rightdiv 1s;
+            position: relative;
+        }
+        @keyframes rightdiv{
+            0%{top: 0px;left: 0px;opacity: 0;}
+            100%{top:10px;left: 20px;opacity: 1;}
+        }
+
+        div#underdiv{
+            width: 900px;
+            height: 550px;
+            top: 30px;
+            left: 350px;
+            background-color: rgba(0, 255, 255, 0.466);
+            animation: underdiv 1s;
+            position: relative;
+
+        }
+        @keyframes underdiv {
+            0%{top: 0px;left: 0px;opacity: 0;width: 0px;height: 0px; }
+            100%{top: 30px; left: 350px;opacity: 1; width: 900px;height: 550px;}
+            
+        }
+
+        audio#headaudio{
+            left: 250px;
+            top: 10px;
+            position: relative;
+        }
+
+        img#mianzeimg{
+            width: 133px ;
+            height: 95px ;
+            left: 30px;
+            position: relative;
+        }
+        div#mianzediv{
+            width: 200px ;
+            height: 150px;
+            top: 30px;
+            left: 50px;
+            animation: mianzediv 1s;
+            position: relative;
+        }
+        @keyframes mianzediv{
+            0%{top: 0px; left: 0px;}
+            100%{top: 30px;left: 50px;}
+        }
+        img#imgsky{
+            position: relative;
+            left: 5vh;
+            width: 100px;
+            height: 150px;
+        }
+        div#divguanyuwo{
+            width: 200px ;
+            top: 30px;
+            left: 50px;
+            animation: mianzediv 1s;
+            position: relative;
+        }
+        @keyframes mianzediv{
+            0%{top: 0px; left: 0px;}
+            100%{top: 30px;left: 50px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="bubbless" >
+            <samp  style="--i:11"  ></samp>
+            <samp  style="--i:12"  ></samp>
+            <samp  style="--i:24"  ></samp>
+            <samp  style="--i:10"  ></samp>
+            <samp  style="--i:14"  ></samp>
+            <samp  style="--i:23"  ></samp>
+            <samp  style="--i:18"  ></samp>
+            <samp  style="--i:16"  ></samp>
+            <samp  style="--i:19"  ></samp>
+            <samp  style="--i:20"  ></samp>
+            <samp  style="--i:22"  ></samp>
+            <samp  style="--i:25"  ></samp>
+            <samp  style="--i:18"  ></samp>
+            <samp  style="--i:21"  ></samp>
+            <samp  style="--i:15"  ></samp>
+            <samp  style="--i:13"  ></samp>
+            <samp  style="--i:26"  ></samp>
+            <samp  style="--i:17"  ></samp>
+            <samp  style="--i:13"  ></samp>
+            <samp  style="--i:28"  ></samp>
+            <samp  style="--i:30"  ></samp>
+            <samp  style="--i:35"  ></samp>
+            <samp  style="--i:38"  ></samp>
+            <samp  style="--i:32"  ></samp>
+            <samp  style="--i:15"  ></samp>
+            <samp  style="--i:20"  ></samp>
+            <samp  style="--i:10"  ></samp>
+            <samp  style="--i:20"  ></samp>
+            <samp  style="--i:45"  ></samp>
+            <samp  style="--i:20"  ></samp>
+            <samp  style="--i:10"  ></samp>
+            <samp  style="--i:30"  ></samp>
+            <samp  style="--i:40"  ></samp>
+            <samp  style="--i:30"  ></samp>
+            <samp  style="--i:40"  ></samp>
+            <samp  style="--i:33"  ></samp>
+            <samp  style="--i:30"  ></samp>
+            <samp  style="--i:33"  ></samp>
+            <samp  style="--i:20"  ></samp>
+            <samp  style="--i:40"  ></samp>
+            <samp  style="--i:20"  ></samp>
+        </div>
+        <div id="rightdiv" style="float: left;">
+            <div>
+                <a href="head.html" style="color: rgb(17, 2, 2);"><div style="border-style:dashed;text-align: center;">
+                    <b>首页>></b>
+                </div>
+                </a>
+            
+
+            <a href="mianze.html" style="color: rgb(17, 2, 2);">
+                <div style="border-style:dashed ;text-align: center;" >
+                <b>免责声明>></b>
+                </div>
+            </a>
+
+            <a href="jianjei.html" style="color: rgb(17, 2, 2);" >
+                <div style="border-style:dashed ;text-align: center;" >
+                    <b>关于我>></b>
+                </div>
+            </a>
+        
+            <div>
+                <a href="" style="color: rgb(17, 2, 2);">
+                    <div style="border-style:dashed ;text-align: center;">
+                    <b>...>></b>
+                    </div>
+                </a>
+                    
+        </div>
+        </div>
+
+        <div  id="avatardiv" style="float: left;border-style:groove;border-color:rgb(74, 221, 172)  ;background-color: rgba(127, 255, 212, 0.404);">
+            
+            <h4 id="headh4" >jmuyiの小巢</h4>
+
+            <a href="head.html" style="color: rgba(0, 0, 0, 0);">
+                <img decoding="async" id="avatarimg" src="image/avatar.jpg" alt="avatar">
+           </a>
+
+            <audio id="headaudio" preload="auto" autoplay controls loop>
+                <source  src="audio/gouzhiqishi.mp3" >
+            </audio>
+
+            <a id="aheadaudio" href="https://y.music.163.com/m/song?id=1345872140">勾指起誓</a>
+
+        </div>
+        <div id="underdiv" style="float: left;">
+            <a href="mianze.html" style="float: left; color: rgb(17, 2, 2);"> 
+                <div id="mianzediv" style="border-style: dotted ; float: left;" >   
+                    <img id="mianzeimg" src="image/mianze-img.gif" alt="免责声明">
+                    <h5 style="text-align: center;" >免责声明</h5>
+                </div>
+            </a>
+            <a href="jianjei.html" style="color: rgb(17, 2, 2);">
+                <div id="divguanyuwo" style="border-style: dotted;float: left;" >
+                    <img id="imgsky" src="image/sky.jpg" alt="sky">
+                    <h5 style="text-align: center;" >关于我</h5>
+                </div>
+            </a>
+            <!-- jia -->
+        </div>
+    </div>
+</body>
+</html>

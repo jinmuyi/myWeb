@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jmuyiの小巢</title>
+    <link rel="shortcut icon" href="image/title.ico">
+    <SCRIPT language=JavaScript>
+
+    <!--
+    
+    var caution = false
+    
+    function setCookie(name, value, expires, path, domain, secure) {
+    
+    var curCookie = name + "=" + escape(value) +
+    
+    ((expires) ? "; expires=" + expires.toGMTString() : "") +
+    
+    ((path) ? "; path=" + path : "") +
+    
+    ((domain) ? "; domain=" + domain : "") +
+    
+    ((secure) ? "; secure" : "")
+    
+    if (!caution || (name + "=" + escape(value)).length <= 4000)
+    
+    document.cookie = curCookie
+    
+    else
+    
+    if (confirm("Cookie exceeds 4KB and will be cut!"))
+    
+    document.cookie = curCookie
+    
+    }
+    
+    function getCookie(name) {
+    
+    var prefix = name + "="
+    
+    var cookieStartIndex = document.cookie.indexOf(prefix)
+    
+    if (cookieStartIndex == -1)
+    
+    return null
+    
+    var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+    
+    if (cookieEndIndex == -1)
+    
+    cookieEndIndex = document.cookie.length
+    
+    return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+    
+    }
+    
+    function deleteCookie(name, path, domain) {
+    
+    if (getCookie(name)) {
+    
+    document.cookie = name + "=" +
+    
+    ((path) ? "; path=" + path : "") +
+    
+    ((domain) ? "; domain=" + domain : "") +
+    
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+    
+    }
+    
+    }
+    
+    function fixDate(date) {
+    
+    var base = new Date(0)
+    
+    var skew = base.getTime()
+    
+    if (skew > 0)
+    
+    date.setTime(date.getTime() - skew)
+    
+    }
+    
+    var now = new Date()
+    
+    fixDate(now)
+    
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+    
+    var visits = getCookie("counter")
+    
+    if (!visits)
+    
+    visits = 1
+    
+    else
+    
+    visits = parseInt(visits) + 1
+    
+    setCookie("counter", visits, now)
+    // -->
+    
+    </SCRIPT>
+    <style>
+        body{
+            transition: 0.5s;
+        }
+        #grad1 {
+        height: 767px;
+	    background-color: red; 
+        background-image: linear-gradient(rgb(96, 106, 247),rgb(32, 31, 31));
+        }
+        .star{
+            position: relative;
+            display: flex;
+        }
+        .star div{
+            background-color: rgb(252, 243, 243);
+            width: 0.1vh;
+            height: 0.1vh;
+            border-radius: 100%;
+            position: relative;
+            animation: star 15s linear infinite  ;
+            animation-duration: calc(15s / var(--v))
+        }
+    @keyframes star{
+        0%{width: 0.1vh;height: 0.1vh;filter: brightness(0.2); }
+        50%{width: 3vh;height: 3vh;filter: brightness(5);}
+        100%{width: 0vh;height: 0vh;filter: brightness(0.2);}
+    }
+    div#divhead{
+        left: 0.1vh;
+        top: 20vh;
+        width: 180vh;
+        height: 52vh;
+        position: relative;
+        animation: divhead 1s;
+    }
+    @keyframes divhead{
+        0%{left: 0vh;top: 0vh;width: 0vh;height: 0vh;opacity: 0;}
+        50%{left: 0.05vh;top: 10vh;width: 91vh;height: 26vh;opacity: 0.6;}
+        100%{left: 0.1vh;top: 20vh;width: 182vh;height: 52vh;opacity:1;}
+    }
+    img#imghead{
+        width: 30vh;
+        top: 1vh;
+        height: 30vh;
+        left: 75vh;
+        position:relative ;
+    }
+    h2#h2head{
+        top: 10vh;
+        text-align: center;
+        position: relative;
+    }
+    .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #35e6f3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 10px #888686;
+  animation: button;
+}
+@keyframes button {
+    0%{opacity: 0;}
+    100%{opacity: 0.1;}
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active{
+    background-color: #020c66;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+    </style>
+</head>
+
+<body id="grad1">
+    
+     <div class="star" style="float: inline-start;">
+            <div style="--v:1;left: 0vh;float: left;"></div>
+            <div style="--v:2;left: 5vh;float: left;"></div>
+            <div style="--v:3;left: 10vh;float: left;"></div>
+            <div style="--v:5;left: 15vh;float: left;"></div>
+            <div style="--v:1;left: 20vh;float: left;"></div>
+            <div style="--v:2;left: 25vh;float: left;"></div>
+            <div style="--v:3;left: 30vh;float: left;"></div>
+            <div style="--v:4;left: 35vh;float: left;"></div>
+            <div style="--v:1;left: 40vh;float: left;"></div>
+            <div style="--v:2;left: 45vh;float: left;"></div>
+            <div style="--v:3;left: 50vh;float: left;"></div>
+            <div style="--v:4;left: 55vh;float: left;"></div>
+            <div style="--v:1;left: 60vh;float: left;"></div>
+            <div style="--v:2;left: 65vh;float: left;"></div>
+            <div style="--v:3;left: 70vh;float: left;"></div>
+            <div style="--v:4;left: 75vh;float: left;"></div>
+            <div style="--v:1;left: 80vh;float: left;"></div>
+            <div style="--v:2;left: 85vh;float: left;"></div>
+            <div style="--v:3;left: 90vh;float: left;"></div>
+            <div style="--v:4;left: 95vh;float: left;"></div>
+            <div style="--v:1;left: 100vh;float: left;"></div>
+            <div style="--v:2;left: 105vh;float: left;"></div>
+            <div style="--v:3;left: 110vh;float: left;"></div>
+            <div style="--v:4;left: 115vh;float: left;"></div>
+            <div style="--v:1;left: 120vh;float: left;"></div>
+            <div style="--v:2;left: 125vh;float: left;"></div>
+        </div>
+     <div class="star" style="float: inline-start;top: 20px;"  >
+        <div style="--v:5;left: 0vh;float: left;"></div>
+        <div style="--v:3;left: 3vh;float: left;"></div>
+        <div style="--v:2;left: 5vh;float: left;"></div>
+        <div style="--v:1;left: 10vh;float: left;"></div>
+        <div style="--v:5;left: 15vh;float: left;"></div>
+        <div style="--v:3;left: 20vh;float: left;"></div>
+        <div style="--v:2;left: 25vh;float: left;"></div>
+        <div style="--v:1;left: 30vh;float: left;"></div>
+        <div style="--v:5;left: 35vh;float: left;"></div>
+        <div style="--v:3;left: 40vh;float: left;"></div>
+        <div style="--v:2;left: 45vh;float: left;"></div>
+        <div style="--v:1;left: 50vh;float: left;"></div>
+        <div style="--v:4;left: 55vh;float: left;"></div>
+        <div style="--v:3;left: 60vh;float: left;"></div>
+        <div style="--v:2;left: 65vh;float: left;"></div>
+        <div style="--v:1;left: 70vh;float: left;"></div>
+        <div style="--v:5;left: 75vh;float: left;"></div>
+        <div style="--v:3;left: 80vh;float: left;"></div>
+        <div style="--v:2;left: 85vh;float: left;"></div>
+        <div style="--v:1;left: 90vh;float: left;"></div>
+        <div style="--v:4;left: 95vh;float: left;"></div>
+        <div style="--v:3;left: 100vh;float: left;"></div>
+        <div style="--v:2;left: 105vh;float: left;"></div>
+        <div style="--v:1;left: 110vh;float: left;"></div>
+        <div style="--v:4;left: 115vh;float: left;"></div>
+        <div style="--v:3;left: 120vh;float: left;"></div>
+    </div>
+    <div id="divhead" style="float: left;background-color: rgba(61, 133, 240, 0.5);float: none;">
+        <div>
+        <img src="image/hi.jpg" alt="hi" id="imghead" >
+        <h2 id="h2head" ><script style="color: #212422;">document.write("欢迎光临我的小巢，你是第" + visits + "位访问这个破站的人")</script></h2>
+        </div>
+        <div style="float: left;">
+            <button class="button" style="vertical-align:middle" onclick="window,location.href='head.html'"><span>进巢 </span></button>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//         佛祖保佑       永无BUG     永不修改                  //
+//////////////////////////////////////////////////////////////////// 
+-->
+
